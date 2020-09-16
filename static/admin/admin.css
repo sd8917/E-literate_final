@@ -1,0 +1,30 @@
+#header{
+    height: 50px;
+    background: #262A2D;
+    color: white;
+ 
+  }
+#header a:link, #header a:visited {
+    color: white;
+}
+
+
+#branding h1{
+    color: #000;
+}
+
+.module h2, .module caption, .inline-group h2{
+    background: #262A2D;
+    color: white;
+    height: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+a.section:link{
+    color: black;
+    /* font-size: medium; */
+}
+a:link{
+    color: black;
+    /* font-size: medium; */
+}

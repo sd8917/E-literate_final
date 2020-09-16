@@ -1,0 +1,59 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg mylogo navbar-light " style="background-color: #262A2D;color: #fff;">
+    <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}"></a>
+     <!-- <a class="navbar-brand2 ml-3" href="/">E-LITERATE</a> -->
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#b9bffa; color: #b9bffa;">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+             <a class="navbar-brand"  href="{% url 'home' %}">HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="/">PROGRAMS</a>
+          </li>
+          <li class="nav-item dropdown" >
+                    <a class="navbar-brand dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        EXAMS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="neet.html">NEET </a></li>
+                        <li><a class="dropdown-item" href="jeeMains.html">JEE Mains</a></li>
+                        <li><a class="dropdown-item" href="cet.html">CET </a></li>
+                        <li><a class="dropdown-item" href="gate.html">GATE</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle mygate" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" style="background-color: #1083c2">
+                                    Gate
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <li><a class="dropdown-item" href="gate-CSE.html">GATE-CSE</a></li>
+                                    <li><a class="dropdown-item" href="gate-CHE.html">GATE-CHE</a></li>
+                                    <li><a class="dropdown-item" href="gate-CE.html">GATE-CE</a></li>
+                                    <li><a class="dropdown-item" href="gate-ME.html">GATE-ME</a></li>
+                                    <li><a class="dropdown-item" href="gate-EE.html">GATE-EE</a></li>
+                                    <li><a class="dropdown-item" href="gate-ECE.html">GATE-ECE</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+       </li>
+      <li class="nav-item">
+          <a class="navbar-brand" href="{% url 'studymaterial' %}">STUDY MATERIAL</a>
+        </li>
+      <li class="nav-item">
+          <a class="navbar-brand" href="{% url 'ourinterns' %}">OUR INTERNS</a>
+      </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="{% url 'aboutus' %}">ABOUT US</a>
+        </li>
+        <li class="nav-item loginbutton">
+          <a href="#" class="btn btn-primary" >login</a>
+          <a href="#" class="btn  btn-primary">Sign Up</a>
+          <!-- <a href="#" class="btn reg navbar-brand2"> REGISTER</a> -->
+        </li>
+      </ul>
+  </nav>

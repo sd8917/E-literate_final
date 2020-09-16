@@ -1,0 +1,462 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Study Material</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/exams.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootnavbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <style>
+      .downloadbtn
+      {
+        margin-bottom: 8px;
+      }
+      .downloadbtn:hover
+      {
+        border-radius: 20px;
+        color: #fff;
+        transition:.6s;
+        font-size: 1.2rem;
+        margin: 2px; 
+        background-color:orange;
+        font-weight: 600;
+      }
+      .myframe
+      {
+      	width:100% ;
+      	height:60vh;
+      }
+      .loginbutton .btn
+      {
+      	padding: 2px 2px;
+      }
+    </style>
+
+  </head>
+<body>
+
+
+<!-- navbar  -> included from includes folder-->
+{% include 'includes/navbar.html' %}
+
+
+<!-- Button trigger modal -->
+
+
+
+<div class="container-fluid  py-4 text-center" >
+  <h1>Study Material </h1>
+  <div class="container py-3 mt-2 myicons">
+    <div class="row" id="myicons2">
+
+        <!-- Modal -->
+          <div class="modal fade" id="JEE-Mains" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">JEE-Mains</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/1.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">Jee-Mains</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#JEE-Mains">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- Modal -->
+          <div class="modal fade" id="NEET" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">NEET</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/2.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">NEET</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#NEET">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- Modal -->
+          <div class="modal fade" id="GATE-CSE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">GATE-CSE</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/3.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title"> GATE-CSE</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#GATE-CSE">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- Modal -->
+          <div class="modal fade" id="GATE-ECE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">GATE-ECE</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/4.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">GATE-ECE</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#GATE-ECE">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- Modal -->
+          <div class="modal fade" id="GATE-ME" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">GATE-ME</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/5.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">GATE-ME</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#GATE-ME">Download
+              </button>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <!-- card end -->
+
+      <!-- Modal -->
+          <div class="modal fade" id="GATE-EE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">GATE-EE</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/6.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">GATE-EE</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#GATE-EE">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+      <!-- Modal -->
+          <div class="modal fade" id="GATE-CE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">GATE-CE</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/7.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">GATE-CE</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#GATE-CE">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+      <!-- Modal -->
+          <div class="modal fade" id="GATE-CHE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">GATE-CHE</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/8.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">GATE-CHE</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#GATE-CHE">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+      <!-- Modal -->
+          <div class="modal fade" id="CET" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">CET</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/9.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">CET</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#CET">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+      <!-- Modal -->
+          <div class="modal fade" id="UPTU" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">UPTU</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                   <iframe class="myframe" src="https://drive.google.com/embeddedfolderview?id=1_qUugjK5QYessIcuARjVB4L0F28Wmef-"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+        <!-- card for which modal will be opend -->
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col">
+        <div class="card mb-3 flip bg-card">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2 py-3">
+              <img src="{% static 'icons/10.jpg' %}" class="card-img ml-1" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-2 px-1">
+                <h5 class="card-title">UPTU</h5>
+              </div>
+               <button type="button" class="btn btn-warning downloadbtn" data-toggle="modal" data-target="#UPTU">Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- footer -->
+<!-- for contact us container -->
+{% include 'includes/footer.html' %}
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      <script src="{% static 'js/bootnavbar.js' %}" ></script>
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script> 
+  </body>
+</html>
